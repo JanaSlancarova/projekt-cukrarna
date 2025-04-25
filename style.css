@@ -40,34 +40,30 @@ body {
 	color: #242424;
 }
 
-h1{
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-weight: bold;
-	font-style: normal;
-	font-size: 52px;
-	line-height: 1.25;
-	color: white;
-}
-
-h2{
-	font-family: "Playfair Display", serif;
-	font-optical-sizing: auto;
-	font-weight: bold;
-	font-style: normal;
-	font-size: 36px;
-	line-height: 1.25;
-	color: #3e606b	;
-}
-
+h1,
+h2,
 h3{
 	font-family: "Playfair Display", serif;
 	font-optical-sizing: auto;
 	font-weight: bold;
 	font-style: normal;
-	font-size: 18px;
 	line-height: 1.25;
-	color: #3e606b	;
+}
+
+h1{
+	font-size: 52px;
+	color: white;
+}
+
+h2{
+
+	font-size: 36px;
+	color: #3e606b;
+}
+
+h3{
+	font-size: 18px;
+	color: #3e606b;
 }
 
 img{
@@ -89,11 +85,14 @@ section{
 	background-image: url(images/cupcake.jpg);
 	background-color: #f0f0f0;
 	background-size: cover;
+	background-position: center;
 	color: white;
 }
 
 .text_hero{
 	max-width: 60%;
+	font-size: 24px;
+	font-style: italic;
 }
 
 /* nastaveni sirky obsahu na strance */
@@ -109,6 +108,8 @@ section{
 
 .box_head{
 	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .vitejte{
@@ -134,15 +135,20 @@ footer{
 	text-align: center;
 }
 
-.logo img{
+.czechitas{
+	margin: 0;
+}
+
+.logo{
 	width: 170px;
-	justify-content: center;
+
 }
 
 .menu ul{
 	display: flex;
 	gap: 10px;
 	padding: 0;
+	margin: 0;
 }
 
 .menu li{
@@ -161,6 +167,7 @@ footer{
 	border-radius: 30px;
 	text-decoration: none;
 	color: white;
+
 }
 
 
@@ -187,4 +194,26 @@ footer{
 
 .peceni{
 	border-radius: 5px;
+}
+
+.nabidka{
+	display: flex;
+	gap: 30px;
+	flex-grow: 1;
+}
+
+.card{
+	background-color: white;
+	border-radius: 5px;
+
+
+}
+
+.popis_card{
+	padding: 20px;
+	text-align: center;
+}
+
+.nadpis_nabidka{
+	margin-top: 0;
 }
